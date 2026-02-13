@@ -1,0 +1,17 @@
+Negative Flow: Incorrect PIN
+Request Body:
+{
+
+ "userId": 102,
+  "walletId": "WALLET123",
+  "pin": "9999",
+  "amount": 500
+}
+
+Expected Response
+{
+  "status": "FAILED",
+  "errorCode": "INVALID_PIN",
+ "message": "The PIN entered is incorrect.",
+  "attemptsRemaining": 2
+}

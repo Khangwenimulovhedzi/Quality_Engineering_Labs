@@ -1,0 +1,16 @@
+// Boundary Condition: Minimum Withdrawal
+Request body:
+{
+ "userId": 102,
+ "walletId": "WALLET123",
+ "pin": "1234",
+  "amount": 10
+}
+
+Expected Response
+{
+ "status": "SUCCESS",
+"transactionId": "TXN98766",
+"newBalance": 1990,
+ "timestamp": "2026-02-13T12:11:00Z"
+}

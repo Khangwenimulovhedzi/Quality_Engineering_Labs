@@ -1,0 +1,17 @@
+// Security scenario: Pin locked after failures
+Request body:
+{
+  "userId": 102,
+ "walletId": "WALLET123",
+ "pin": "1111",
+  "amount": 200
+}
+
+Expected Response:
+
+{
+"status": "FAILED",
+"errorCode": "PIN_LOCKED",
+  "message": "Your wallet PIN has been locked due to multiple failed attempts.",
+ "unlockInstructions": "Contact customer support."
+}

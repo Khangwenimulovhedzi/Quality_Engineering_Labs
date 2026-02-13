@@ -1,0 +1,20 @@
+Positive  Flow: Incorrect PIN
+Request Body:
+{
+   "comment":"Positive flow>Incorrect PIN",
+  "userId": 102,
+  "amount": 500,
+  "pin": "1234"
+}
+Expected Success Response:
+Status: 200 OK
+{
+  "status": "SUCCESS",
+  "transactionId": "TX12345",
+  "remainingBalance": 500
+}
+
+Expected Error Responses:
+401: INVALID_PIN
+400: INSUFFICIENT_FUNDS
+423: ACCOUNT_LOCKED

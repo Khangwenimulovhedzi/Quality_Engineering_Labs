@@ -1,0 +1,19 @@
+
+
+{
+  "comment":"Concurency scenario: simultaneous withdrawals",
+  "Request Body": 11,
+ "userId": 102,
+ "walletId": "WALLET123",
+"pin": "1234",
+ "amount": 100,
+ "requestId": "REQ-20260213-001"
+}
+
+Expected Response
+
+{
+  "status": "FAILED",
+"errorCode": "CONCURRENT_TRANSACTION",
+  "message": "Another withdrawal is already in progress."
+}
